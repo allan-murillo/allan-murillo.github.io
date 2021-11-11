@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>A2 SKIN Mobile MedSpa</title>
+    <title>Skin Care | A2 SKIN Mobile MedSpa</title>
 	
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -24,31 +24,54 @@
 	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
 	<!-- template skin -->
 	<link id="t-colors" href="color/default.css" rel="stylesheet">
+	<style>
+	div.gallery {
+  border: 3px solid rgb(5, 114, 150);
+}
 
+div.gallery:hover {
+  border: 3px solid rgb(4, 66, 128);
+}
 
-		<style>
-		div.gallery {
-		  margin: 5px;
-		  border: 3px solid rgb(0, 130, 150);
-		  float: left;
-		  width: 200px;
-		}
-		
-		div.gallery:hover {
-		  border: 1px solid #777;
-		}
-		
-		div.gallery img {
-		  width: 100%;
-		  height: auto;
-		}
-		
-		div.desc {
-		  padding: 15px;
-		  text-align: center;
-		}
-		</style>
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 
 </head>
 
@@ -87,114 +110,94 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Hot</span>Services <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="#">SKIN LESION REMOVAL</a></li>
-					  <li><a href="#" >3D MICROBLADING EYEBROWS</a></li>
-					  <li><a href="#" >IPL/FOTOFACIAL</a></li>
-					  <li><a href="#" >LASER HAIR REMOVAL</a></li>
-					  <li><a href="#" >CHEMICAL PEELS</a></li>
-					  <li><a href="#" >MESOTHERAPY</a></li>
-					  <li><a href="#" >IV GLUTATHIONE</a></li>
-					  <li><a href="#" >MESO HAIR THERAPY</a></li>
-					  <li><a href="#" >OXYGEN FACIAL</a></li>
-					  <li><a href="#" >PCA MASK</a></li>
+					  <li><a href="SkinLesionRemoval.html">SKIN LESION REMOVAL</a></li>
+					  <li><a href="3D-microblading-eyebrows.html">3D MICROBLADING EYEBROWS</a></li>
+					  <li><a href="IPL-Fotofacial.html">IPL/FOTOFACIAL</a></li>
+					  <li><a href="laser-hair-removal.html">LASER HAIR REMOVAL</a></li>
+					  <li><a href="chemical-peels.html">CHEMICAL PEELS</a></li>				  
+					  <li><a href="iv-glutathione.html">IV GLUTATHIONE</a></li>					  
+					  <li><a href="oxygen-facial.html">OXYGEN FACIAL</a></li>
+					  <li><a href="#">PCA MASK</a></li>
+					</ul>
+				  </li>	
+				<li><a href="SkinCareProduct.html">Skin Care</a></li>
+				<li><a href="index.html#doctor">Clinicians</a></li>
+				<li><a href="index.html#pricing">Treatment Pricing</a></li>
+				<li><a href="index.html#contact">Contact</a></li>			
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Other</span>Info <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="index.html#beforeAfter">Before and After</a></li>
+					  <li><a href="Gallery.html">Gallery</a></li>
+					  <li><a href="#">AfterCare Info</a></li>					  
 					</ul>
 				  </li>
-				<li><a href="index.html#doctor">Clinicians</a></li>
-				<li><a href="#beforeAfter">Before and After</a></li>
-				<li><a href="#pricing">Treatment Pricing</a></li>
-				<li><a href="#contact">Contact</a></li>			
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+	
 
 	<section id="Gallery" class="home-section bg-gray paddingbot-60">
 		<div class="container marginbot-50">
-
 			<div class="col-lg-8 col-lg-offset-2">
 				<div class="wow fadeInDown" data-wow-delay="0.1s">
 				<div class="section-heading text-center">
 					<br>	<br>	
-				<h2 class="h-bold">GALLERY</h2><br>	<br>	
+				<h2 class="h-bold">Skin Care Products</h2><br>	<br>	
 				</div>		
 				</div>	
 			</div>	
 
-			<div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/a2skin1.jpg">
-				  <img src="img/A2Skin/gallery/a2skin1.jpg"  width="600" height="400">
-				</a>
-				
-			  </div>
-			  
+			  <div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/2.jpg">
-				  <img src="img/A2Skin/gallery/a2skin2.jpg" width="600" height="400">
+				<a target="_blank" href="img/A2Skin/product/product1.png">
+				  <img src="img/A2Skin/product/product1.png"  width="600" height="400">
 				</a>
+				<div class="desc"> $100</div>
+				</div>
+			  </div>
+
+			  <div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/product/product2.png">
+					<img src="img/A2Skin/product/product2.png"  width="600" height="400">
+				  </a>
+				  <div class="desc"> $85</div>
+				</div>
+			  </div>
+
+			  <div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/product/product3.png">
+					<img src="img/A2Skin/product/product3.png"  width="600" height="400">
+				  </a>
+				  <div class="desc"> $100</div>
+			  </div>
+			</div>
 			
-			  </div>
-			  
+			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/3.jpg">
-				  <img src="img/A2Skin/gallery/a2skin3.jpg"  width="600" height="400">
-				</a>
-				
+				<a target="_blank" href="img/A2Skin/product/product4.png">
+					<img src="img/A2Skin/product/product4.png"  width="600" height="400">
+				  </a>
+				  <div class="desc"> $100</div>
 			  </div>
-			  
+			</div>
+			
+			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery1.png">
-				  <img src="img/A2Skin/gallery/gallery1.png" width="600" height="400">
-				</a>
+				<a target="_blank" href="img/A2Skin/product/product4.png">
+					<img src="img/A2Skin/product/product4.png"  width="600" height="400">
+				  </a>
+				  <div class="desc"> $75</div>
 			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery2.png">
-				  <img src="img/A2Skin/gallery/gallery2.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery3.png">
-				  <img src="img/A2Skin/gallery/gallery3.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery4.png">
-				  <img src="img/A2Skin/gallery/gallery4.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery5.png">
-				  <img src="img/A2Skin/gallery/gallery5.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery6.png">
-				  <img src="img/A2Skin/gallery/gallery6.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery7.png">
-				  <img src="img/A2Skin/gallery/gallery7.png" width="600" height="400">
-				</a>
-			  </div>
-
-			  <div class="gallery">
-				<a target="_blank" href="img/A2Skin/gallery/gallery8.png">
-				  <img src="img/A2Skin/gallery/gallery8.png" width="600" height="400">
-				</a>
-			  </div>
-
-
+			</div>	
+			
 		</div>	
 	</section>
-
 
 	<footer>
 	
@@ -215,10 +218,10 @@
 					<div class="widget">
 						<h5>Information</h5>
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Laboratory</a></li>
-							<li><a href="#">Medical treatment</a></li>
-							<li><a href="#">Terms & conditions</a></li>
+							<li><a href="#">Skin Care Product</a></li>
+							<li><a href="#">Aftercare Info</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Others</a></li>
 						</ul>
 					</div>
 					</div>

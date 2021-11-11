@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>A2 SKIN Mobile MedSpa</title>
+    <title>3D Microblading Eyebrows | A2 SKIN Mobile MedSpa</title>
 	
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -24,7 +24,54 @@
 	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
 	<!-- template skin -->
 	<link id="t-colors" href="color/default.css" rel="stylesheet">
+	<style>
+	div.gallery {
+  border: 3px solid rgb(5, 114, 150);
+}
 
+div.gallery:hover {
+  border: 3px solid rgb(4, 66, 128);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 
 </head>
 
@@ -59,86 +106,94 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-				<li ><a href="index.html#intro">Home</a></li>
+				<li class="active"><a href="index.html#intro">Home</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Hot</span>Services <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li class="active"><a href="#">SKIN LESION REMOVAL</a></li>
-					  <li><a href="#" >3D MICROBLADING EYEBROWS</a></li>
-					  <li><a href="#" >IPL/FOTOFACIAL</a></li>
-					  <li><a href="#" >LASER HAIR REMOVAL</a></li>
-					  <li><a href="#" >CHEMICAL PEELS</a></li>
-					  <li><a href="#" >MESOTHERAPY</a></li>
-					  <li><a href="#" >IV GLUTATHIONE</a></li>
-					  <li><a href="#" >MESO HAIR THERAPY</a></li>
-					  <li><a href="#" >OXYGEN FACIAL</a></li>
-					  <li><a href="#" >PCA MASK</a></li>
+					  <li><a href="SkinLesionRemoval.html">SKIN LESION REMOVAL</a></li>
+					  <li><a href="3D-microblading-eyebrows.html">3D MICROBLADING EYEBROWS</a></li>
+					  <li><a href="IPL-Fotofacial.html">IPL/FOTOFACIAL</a></li>
+					  <li><a href="laser-hair-removal.html">LASER HAIR REMOVAL</a></li>
+					  <li><a href="chemical-peels.html">CHEMICAL PEELS</a></li>				  
+					  <li><a href="iv-glutathione.html">IV GLUTATHIONE</a></li>					  
+					  <li><a href="oxygen-facial.html">OXYGEN FACIAL</a></li>
+					  <li><a href="#">PCA MASK</a></li>
+					</ul>
+				  </li>	
+				<li><a href="SkinCareProduct.html">Skin Care</a></li>
+				<li><a href="index.html#doctor">Clinicians</a></li>
+				<li><a href="index.html#pricing">Treatment Pricing</a></li>
+				<li><a href="index.html#contact">Contact</a></li>			
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Other</span>Info <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="index.html#beforeAfter">Before and After</a></li>
+					  <li><a href="Gallery.html">Gallery</a></li>
+					  <li><a href="#">AfterCare Info</a></li>					  
 					</ul>
 				  </li>
-				<li><a href="index.html#doctor">Clinicians</a></li>
-				<li><a href="#beforeAfter">Before and After</a></li>
-				<li><a href="#pricing">Treatment Pricing</a></li>
-				<li><a href="#contact">Contact</a></li>			
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+	
 
-
-
-	<section id="doctor" class="home-section bg-gray paddingbot-60">
+	<section id="Gallery" class="home-section bg-gray paddingbot-60">
 		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="section-heading text-center">
-						<br>	<br>	
-					<h2 class="h-bold">SKIN LESION REMOVAL</h2><br>	<br>	
-					</div>		
-					<h4 style="color:teal; font-family: 'Century Gothic'; font-weight:bold; text-shadow:5px 3px 2px rgba(0,0,0,0.3)">
-                   <strong>Please Read</strong></h4><hr />
-                    <p>Please note: the following is provided for informational purposes only. <b> A2 Skin MedSpa </b> believes that our clients should be well informed prior to undergoing any treatment. Plan to discuss treatment options with your provider, understanding that their recommendations are based on skin type, your expected treatment outcome, and the overall health of your skin prior to treatment.</p><br />
-					<h3 
-                    style="color:teal; font-family: 'Century Gothic'; font-weight:bold; text-shadow:5px 3px 2px rgba(0,0,0,0.3)">
-                   <strong>Skin Lesion Removal by Lam Probe</strong></h3><hr />
-                   <!--Card-->
-                    <div class="card default-color-dark">
-                        <!--Card image-->
-                        <div class="view overlay zoom">
-                            <img src="img/A2skin/services/skin.png" class="card-img-top" />
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="wow fadeInDown" data-wow-delay="0.1s">
+				<div class="section-heading text-center">
+					<br>	<br>	
+				<h2 class="h-bold">3D Microblading Eyebrows</h2><br>	<br>	
+				</div>		
+				</div>	
+			</div>	
 
-                        </div>
-                    </div>
-                    <!--/.Card-->
-					<br>
-				
-					<p>The Lam Probe is an instrument which provides quick and effective treatment of a variety of common skin irregularities. The Lam Probe may be used to treat milia, cholesterol deposits, skin tags, age spots, clogged pores, cherry angiomas, benign moles and more.</p>
-                    <p>The Lam Probe utilizes a blending of radio and high frequency currents which arc onto the skin and attracts the moisture in these irregularities. This technology enables the esthetician to clear up troublesome problems without penetrating the skin surface or inducing trauma on the surrounding tissue, thus allowing for speedy healing and greater client satisfaction.</p>
-                    <p>Treatments are very quick (some even within a few seconds) and may not even touch the skin's surface. Small skin tags or blood spots disappear immediately and hyper-pigmented areas such as liver or "age spots" take only a few seconds.</p>
-                    <p>Lam Probe helps to remove those unsightly minor skin irregularities that bother us. These include milias (whiteheads), blackheads (comedones) fibromas (pigmented epidermal growths), broken capillaries, pimples or pustules, blood spots and skin tags that are prevalent on the neck and decollete area. The Lam Probe works on the principle of liquids being attracted to heat which is released by various probes. Treatments are very quick (some within a few seconds), and may not even touch the skin's surface. Small skin tags or blood spots disappear immediately and hyperpigmented areas such as liver or "age spots" take only a few seconds. There is minimal discomfort for the client patient and healing time is short, from a day or two for skin tags to a few weeks for larger skin abnormalities such as fibromas.</p>
-                    <br />
-                    <h4 
-                    style="color:teal; font-family: 'Century Gothic'; font-weight:bold; text-shadow:5px 3px 2px rgba(0,0,0,0.3)">
-                   <strong>Effective in the treatment of:</strong></h4><hr />
-                    <p>Telangiectasia</p>
-                    <p>Cholesterol Deposits</p>
-                    <p>Milia</p>
-                    <p>Cherry Angiomas</p>
-                    <p>Spider Naevi</p>
-                    <p>Clogged Pores</p>
-				
+			
+
+			  <div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/services/gallery5.png">
+				  <img src="img/A2Skin/services/gallery5.png"  width="600" height="400">
+				</a>
 				</div>
+			  </div>
+
+			  <div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/services/gallery6.png">
+				  <img src="img/A2Skin/services/gallery6.png" width="600" height="400">
+				</a>
+				</div>
+			  </div>
+
+			  <div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/services/gallery7.png">
+				  <img src="img/A2Skin/services/gallery7.png" width="600" height="400">
+				</a>
+			  </div>
 			</div>
-		</div>
-		
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/services/eyes.png">
+				  <img src="img/A2Skin/services/eyes.png" width="600" height="400">
+				</a>
+			  </div>
+			</div>
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="img/A2Skin/services/eye.png">
+				  <img src="img/A2Skin/services/eye.png" width="600" height="400">
+				</a>
+			  </div>
+			</div>				
+
+		</div>	
 	</section>
-	<!-- /Section: team -->
-
-
-
-
 
 	<footer>
 	
@@ -159,10 +214,10 @@
 					<div class="widget">
 						<h5>Information</h5>
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Laboratory</a></li>
-							<li><a href="#">Medical treatment</a></li>
-							<li><a href="#">Terms & conditions</a></li>
+							<li><a href="#">Skin Care Product</a></li>
+							<li><a href="#">Aftercare Info</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Others</a></li>
 						</ul>
 					</div>
 					</div>
