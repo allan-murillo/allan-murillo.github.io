@@ -39,9 +39,9 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-			if ($mail) { header("Location: https://a2skinmedspa.000webhostapp.com/index.html"); /* Redirect browser */ 
+			if ($mail) { header("Location: http://a2skinmedspa.com/index.html"); /* Redirect browser */ 
 exit(); }
-      else { header("Location: https://a2skinmedspa.000webhostapp.com/index.html"); /* Redirect browser */ 
+      else { header("Location: http://a2skinmedspa.com/index.html"); /* Redirect browser */ 
        }
 
 		
