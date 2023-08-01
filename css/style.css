@@ -115,7 +115,7 @@ a.move-top {
 /* //header */
 
 /* banner */
-.banner-top1 {
+.banner-top1 {  
     background: url(../images/ab2.png) no-repeat top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -125,6 +125,7 @@ a.move-top {
     min-height: 800px;
     position: relative;
     z-index: 1;
+    
 }
 
 .banner-text {
