@@ -327,14 +327,6 @@ h6,
 
 
 /* Your desktop styles */
-.navbar {
-    background-color: #333; /* Customize your desktop navbar style */
-    padding: 10px;
-}
-
-.navbar h1 {
-    font-size: 24px; /* Customize the font size for desktop */
-}
 
 .navbar-toggler {
     display: block;
@@ -344,7 +336,7 @@ h6,
 /* Media query for mobile screens */
 @media screen and (max-width: 767px) {
     .navbar {
-        background-color: #555; /* Customize your mobile navbar style */
+       
         text-align: center; /* Center-align content on mobile */
     }
 
