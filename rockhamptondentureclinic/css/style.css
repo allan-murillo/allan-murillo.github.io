@@ -324,8 +324,6 @@ h6,
     height: 120px;
 }
 
-
-
 /* Your desktop styles */
 
 .navbar-toggler {
@@ -341,7 +339,7 @@ h6,
     }
 
     .navbar h1 {
-        font-size: 20px; /* Customize the font size for mobile */
+        font-size: 12px; /* Customize the font size for mobile */
         margin-bottom: 10px;
     }
 }
