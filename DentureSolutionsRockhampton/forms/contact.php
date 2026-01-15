@@ -1,41 +1,80 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+$receiving_email_address = 'amurillo.1018@gmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // Sanitize inputs
+    $name    = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email   = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
+    $phone   = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    if (!$name || !$email || !$phone) {
+        http_response_code(400);
+        echo "Please fill in all required fields.";
+        exit;
+    }
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    $subject = "Message Request from Website";
 
-  echo $contact->send();
+    // Modern HTML email
+    $body = "
+    <html>
+    <head>
+        <meta charset='UTF-8'>
+        <style>
+            body { background:#f4f6f8; font-family: Arial, sans-serif; }
+            .card {
+                max-width:600px;
+                margin:30px auto;
+                background:#ffffff;
+                border-radius:10px;
+                padding:25px;
+                box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            }
+            h2 { color:#0d6efd; margin-bottom:15px; }
+            .item { margin-bottom:10px; }
+            .label { font-weight:bold; color:#333; }
+            .footer {
+                margin-top:20px;
+                font-size:13px;
+                color:#777;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='card'>
+            <h2>Callback Request</h2>
+            <p>A customer has submitted a message request from the website.</p>
+
+            <div class='item'><span class='label'>Name:</span> {$name}</div>
+            <div class='item'><span class='label'>Email:</span> {$email}</div>
+            <div class='item'><span class='label'>Phone:</span> {$phone}</div>
+            <div class='item'><span class='label'>Message:</span><br>{$message}</div>
+
+            <div class='footer'>
+                Please contact the customer as soon as possible.
+                <br>
+                <br>
+                www.denturesolutionsrockhampton.com.au
+            </div>
+        </div>
+    </body>
+    </html>
+    ";
+
+    // Headers
+    $headers  = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8\r\n";
+    $headers .= "From: Website Message <no-reply@denturesolutionsrockhampton.com.au>\r\n";
+    $headers .= "Reply-To: {$email}\r\n";
+
+    if (mail($receiving_email_address, $subject, $body, $headers)) {
+        echo "OK";
+    } else {
+        http_response_code(500);
+        echo "Email failed to send.";
+    }
+}
 ?>
