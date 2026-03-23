@@ -1,5 +1,10 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
 $receiving_email_address = 'amurillo.1018@gmail.com';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -18,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $subject = "Message Request from Website";
 
-    // Modern HTML email
     $body = "
     <html>
     <head>
@@ -54,9 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class='item'><span class='label'>Message:</span><br>{$message}</div>
 
             <div class='footer'>
-                Please contact the customer as soon as possible.
-                <br>
-                <br>
+                Please contact the customer as soon as possible.<br><br>
                 www.denturesolutionsrockhampton.com.au
             </div>
         </div>
@@ -64,17 +66,38 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </html>
     ";
 
-    // Headers
-    $headers  = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8\r\n";
-    $headers .= "From: Website Message <no-reply@denturesolutionsrockhampton.com.au>\r\n";
-    $headers .= "Reply-To: {$email}\r\n";
+    $mail = new PHPMailer(true);
 
-    if (mail($receiving_email_address, $subject, $body, $headers)) {
+    try {
+
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'rockhamptondenturesolutions@gmail.com';
+        $mail->Password   = 'gjunogplupwyyqtg';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        // Sender and recipient
+        $mail->setFrom($email, 'Website Contact');
+        $mail->addAddress($receiving_email_address);
+
+        $mail->addReplyTo($email, $name);
+
+        // Email content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+
+        $mail->send();
+
         echo "OK";
-    } else {
+
+    } catch (Exception $e) {
+
         http_response_code(500);
-        echo "Email failed to send.";
+        echo "Email failed to send. Error: {$mail->ErrorInfo}";
     }
 }
 ?>
