@@ -1,0 +1,18 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#08111E"/>
+  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
+  <rect x="114" y="116" width="390" height="520" rx="24" fill="#F6F7FB"/>
+  <rect x="548" y="116" width="538" height="126" rx="24" fill="#13253C"/>
+  <rect x="548" y="274" width="538" height="362" rx="24" fill="#0E1C30"/>
+  <rect x="160" y="188" width="220" height="18" rx="9" fill="#FF8B6B"/>
+  <rect x="160" y="246" width="298" height="12" rx="6" fill="#95A9C9"/>
+  <rect x="160" y="292" width="270" height="12" rx="6" fill="#95A9C9"/>
+  <rect x="160" y="338" width="286" height="12" rx="6" fill="#95A9C9"/>
+  <text x="114" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="40" font-weight="700">Invoicing System</text>
+  <defs>
+    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12253B"/>
+      <stop offset="1" stop-color="#0A1625"/>
+    </linearGradient>
+  </defs>
+</svg>
