@@ -1,0 +1,17 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#0A1220"/>
+  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
+  <rect x="100" y="116" width="328" height="498" rx="26" fill="#101C31"/>
+  <rect x="468" y="116" width="616" height="220" rx="26" fill="#15233A"/>
+  <rect x="468" y="366" width="286" height="248" rx="26" fill="#182A44"/>
+  <rect x="798" y="366" width="286" height="248" rx="26" fill="#0E1E32"/>
+  <text x="100" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="40" font-weight="700">Martial Arts Management</text>
+  <circle cx="264" cy="302" r="94" fill="#F6C977" fill-opacity=".88"/>
+  <rect x="194" y="426" width="140" height="22" rx="11" fill="#F8DFC3" fill-opacity=".6"/>
+  <defs>
+    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16243B"/>
+      <stop offset="1" stop-color="#0B1626"/>
+    </linearGradient>
+  </defs>
+</svg>
