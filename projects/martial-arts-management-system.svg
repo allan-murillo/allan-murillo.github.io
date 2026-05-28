@@ -1,17 +1,81 @@
 <svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="760" rx="36" fill="#0A1220"/>
-  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
-  <rect x="100" y="116" width="328" height="498" rx="26" fill="#101C31"/>
-  <rect x="468" y="116" width="616" height="220" rx="26" fill="#15233A"/>
-  <rect x="468" y="366" width="286" height="248" rx="26" fill="#182A44"/>
-  <rect x="798" y="366" width="286" height="248" rx="26" fill="#0E1E32"/>
-  <text x="100" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="40" font-weight="700">Martial Arts Management</text>
-  <circle cx="264" cy="302" r="94" fill="#F6C977" fill-opacity=".88"/>
-  <rect x="194" y="426" width="140" height="22" rx="11" fill="#F8DFC3" fill-opacity=".6"/>
   <defs>
-    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#16243B"/>
-      <stop offset="1" stop-color="#0B1626"/>
+    <linearGradient id="bg" x1="76" y1="44" x2="1126" y2="716" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B2414"/>
+      <stop offset="1" stop-color="#0F121B"/>
     </linearGradient>
+    <filter id="shadow" x="54" y="22" width="1092" height="708" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#060504" flood-opacity="0.42"/>
+    </filter>
   </defs>
+  <rect width="1200" height="760" rx="36" fill="#0B0E14"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="40" width="1072" height="680" rx="30" fill="url(#bg)"/>
+  </g>
+  <rect x="64" y="40" width="1072" height="58" rx="30" fill="#40351D"/>
+  <circle cx="112" cy="69" r="8" fill="#FF8D72"/>
+  <circle cx="140" cy="69" r="8" fill="#FFD06A"/>
+  <circle cx="168" cy="69" r="8" fill="#68E0D0"/>
+  <text x="208" y="76" fill="#FFF9ED" font-family="Arial, sans-serif" font-size="25" font-weight="700">Martial Arts Management System</text>
+  <rect x="92" y="126" width="226" height="548" rx="24" fill="#19150E"/>
+  <text x="122" y="172" fill="#FFF2D7" font-family="Arial, sans-serif" font-size="20" font-weight="700">Dojo Admin</text>
+  <rect x="114" y="206" width="182" height="40" rx="14" fill="#5A471D"/>
+  <g fill="#BCA67A" font-family="Arial, sans-serif" font-size="16">
+    <text x="138" y="232" fill="#FFF0CB">Students</text>
+    <text x="122" y="292">Schedules</text>
+    <text x="122" y="334">Attendance</text>
+    <text x="122" y="376">Payments</text>
+    <text x="122" y="418">Progress Belts</text>
+    <text x="122" y="460">Coaches</text>
+  </g>
+  <rect x="344" y="126" width="756" height="146" rx="24" fill="#171A22"/>
+  <text x="376" y="170" fill="#BCA67A" font-family="Arial, sans-serif" font-size="16">Active Students</text>
+  <text x="376" y="214" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="700">214</text>
+  <rect x="548" y="154" width="190" height="86" rx="20" fill="#201B12"/>
+  <text x="576" y="188" fill="#BCA67A" font-family="Arial, sans-serif" font-size="15">Classes Today</text>
+  <text x="576" y="222" fill="#FFF7E7" font-family="Arial, sans-serif" font-size="28" font-weight="700">12</text>
+  <rect x="760" y="154" width="150" height="86" rx="20" fill="#201B12"/>
+  <rect x="930" y="154" width="138" height="86" rx="20" fill="#201B12"/>
+  <text x="784" y="188" fill="#BCA67A" font-family="Arial, sans-serif" font-size="15">Belts Issued</text>
+  <text x="784" y="222" fill="#FFF7E7" font-family="Arial, sans-serif" font-size="28" font-weight="700">18</text>
+  <text x="954" y="188" fill="#BCA67A" font-family="Arial, sans-serif" font-size="15">Fees Due</text>
+  <text x="954" y="222" fill="#FFF7E7" font-family="Arial, sans-serif" font-size="28" font-weight="700">9</text>
+  <rect x="344" y="298" width="410" height="346" rx="24" fill="#171A22"/>
+  <text x="376" y="340" fill="#FFF9ED" font-family="Arial, sans-serif" font-size="22" font-weight="700">Student Registry</text>
+  <rect x="376" y="364" width="346" height="1" fill="#3F3620"/>
+  <g fill="#BCA67A" font-family="Arial, sans-serif" font-size="15">
+    <text x="376" y="396">Name</text>
+    <text x="560" y="396">Program</text>
+    <text x="664" y="396">Belt</text>
+  </g>
+  <g fill="#FFF3DB" font-family="Arial, sans-serif" font-size="16">
+    <text x="376" y="438">K. Mendoza</text>
+    <text x="560" y="438">Taekwondo</text>
+    <text x="664" y="438">Blue</text>
+    <text x="376" y="478">R. Dela Cruz</text>
+    <text x="560" y="478">Karate</text>
+    <text x="664" y="478">Brown</text>
+    <text x="376" y="518">P. Ramos</text>
+    <text x="560" y="518">Jiu-Jitsu</text>
+    <text x="664" y="518">White</text>
+    <text x="376" y="558">A. Lim</text>
+    <text x="560" y="558">Muay Thai</text>
+    <text x="664" y="558">Red</text>
+  </g>
+  <rect x="784" y="298" width="316" height="158" rx="24" fill="#171A22"/>
+  <text x="816" y="340" fill="#FFF9ED" font-family="Arial, sans-serif" font-size="20" font-weight="700">Weekly Schedule</text>
+  <rect x="816" y="366" width="252" height="14" rx="7" fill="#2D2617"/>
+  <rect x="816" y="396" width="196" height="14" rx="7" fill="#7F6834"/>
+  <rect x="816" y="426" width="230" height="14" rx="7" fill="#D8B66E"/>
+  <rect x="784" y="486" width="316" height="158" rx="24" fill="#171A22"/>
+  <text x="816" y="528" fill="#FFF9ED" font-family="Arial, sans-serif" font-size="20" font-weight="700">Payment Status</text>
+  <circle cx="878" cy="582" r="38" fill="#2D2617"/>
+  <path d="M878 544A38 38 0 0 1 912 603L878 582V544Z" fill="#D8B66E"/>
+  <path d="M912 603A38 38 0 0 1 848 601L878 582L912 603Z" fill="#7CB6FF"/>
+  <path d="M848 601A38 38 0 0 1 878 544V582L848 601Z" fill="#68E0D0"/>
+  <g fill="#BCA67A" font-family="Arial, sans-serif" font-size="14">
+    <text x="942" y="566">Paid</text>
+    <text x="942" y="590">Upcoming</text>
+    <text x="942" y="614">Overdue</text>
+  </g>
 </svg>

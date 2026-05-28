@@ -1,19 +1,84 @@
 <svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="760" rx="36" fill="#091421"/>
-  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
-  <rect x="88" y="118" width="1024" height="74" rx="18" fill="#122339"/>
-  <rect x="88" y="226" width="484" height="360" rx="24" fill="#12263F"/>
-  <rect x="604" y="226" width="508" height="120" rx="24" fill="#143048"/>
-  <rect x="604" y="370" width="508" height="216" rx="24" fill="#102031"/>
-  <text x="88" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="44" font-weight="700">Payroll System</text>
-  <rect x="134" y="278" width="392" height="26" rx="13" fill="#6CE5D8" fill-opacity=".9"/>
-  <rect x="134" y="332" width="318" height="18" rx="9" fill="#A9B8D3" fill-opacity=".5"/>
-  <rect x="134" y="372" width="344" height="18" rx="9" fill="#A9B8D3" fill-opacity=".5"/>
-  <rect x="134" y="412" width="286" height="18" rx="9" fill="#A9B8D3" fill-opacity=".5"/>
   <defs>
-    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#122233"/>
-      <stop offset="1" stop-color="#0C1827"/>
+    <linearGradient id="bg" x1="80" y1="50" x2="1120" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#122A34"/>
+      <stop offset="1" stop-color="#09161F"/>
     </linearGradient>
+    <filter id="shadow" x="52" y="24" width="1096" height="704" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#01070D" flood-opacity="0.44"/>
+    </filter>
   </defs>
+  <rect width="1200" height="760" rx="36" fill="#071018"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="40" width="1072" height="680" rx="30" fill="url(#bg)"/>
+  </g>
+  <rect x="64" y="40" width="1072" height="58" rx="30" fill="#1C3B49"/>
+  <circle cx="112" cy="69" r="8" fill="#FF8D72"/>
+  <circle cx="140" cy="69" r="8" fill="#FFD06A"/>
+  <circle cx="168" cy="69" r="8" fill="#67E4D8"/>
+  <text x="208" y="76" fill="#F5FCFF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Payroll System</text>
+  <rect x="90" y="126" width="238" height="548" rx="24" fill="#10222D"/>
+  <text x="122" y="172" fill="#EBFBFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">People &amp; Pay</text>
+  <rect x="114" y="206" width="190" height="40" rx="14" fill="#174150"/>
+  <g fill="#8FB7C6" font-family="Arial, sans-serif" font-size="16">
+    <text x="140" y="232" fill="#D9F5FB">Payroll Run</text>
+    <text x="122" y="292">Employees</text>
+    <text x="122" y="334">Attendance Sync</text>
+    <text x="122" y="376">Benefits</text>
+    <text x="122" y="418">Tax Deductions</text>
+    <text x="122" y="460">Payslips</text>
+  </g>
+  <rect x="356" y="126" width="348" height="132" rx="24" fill="#102733"/>
+  <rect x="726" y="126" width="178" height="132" rx="24" fill="#112A37"/>
+  <rect x="922" y="126" width="178" height="132" rx="24" fill="#112A37"/>
+  <text x="388" y="170" fill="#8CB7C6" font-family="Arial, sans-serif" font-size="16">Current Payroll Cycle</text>
+  <text x="388" y="216" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="700">May 16 - May 31</text>
+  <rect x="388" y="228" width="200" height="10" rx="5" fill="#1C4252"/>
+  <rect x="388" y="228" width="152" height="10" rx="5" fill="#68E0D0"/>
+  <text x="756" y="170" fill="#8CB7C6" font-family="Arial, sans-serif" font-size="16">Employees</text>
+  <text x="756" y="216" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">128</text>
+  <text x="952" y="170" fill="#8CB7C6" font-family="Arial, sans-serif" font-size="16">Net Pay</text>
+  <text x="952" y="216" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">$59,820</text>
+  <rect x="356" y="284" width="474" height="360" rx="24" fill="#0E2029"/>
+  <text x="388" y="328" fill="#F5FCFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Payroll Register</text>
+  <rect x="388" y="352" width="410" height="1" fill="#1E4656"/>
+  <g fill="#7FA6B5" font-family="Arial, sans-serif" font-size="15">
+    <text x="388" y="384">Employee</text>
+    <text x="562" y="384">Hours</text>
+    <text x="654" y="384">Deductions</text>
+    <text x="760" y="384">Net</text>
+  </g>
+  <g fill="#DDF8FF" font-family="Arial, sans-serif" font-size="16">
+    <text x="388" y="428">A. Reyes</text>
+    <text x="562" y="428">88</text>
+    <text x="654" y="428">$146</text>
+    <text x="760" y="428">$1,084</text>
+    <text x="388" y="472">M. Santos</text>
+    <text x="562" y="472">86</text>
+    <text x="654" y="472">$138</text>
+    <text x="760" y="472">$1,045</text>
+    <text x="388" y="516">J. Cruz</text>
+    <text x="562" y="516">92</text>
+    <text x="654" y="516">$165</text>
+    <text x="760" y="516">$1,126</text>
+    <text x="388" y="560">L. Garcia</text>
+    <text x="562" y="560">84</text>
+    <text x="654" y="560">$130</text>
+    <text x="760" y="560">$1,010</text>
+  </g>
+  <rect x="854" y="284" width="246" height="170" rx="24" fill="#0F202B"/>
+  <text x="886" y="326" fill="#F5FCFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Deductions</text>
+  <circle cx="968" cy="374" r="44" fill="#143848"/>
+  <path d="M968 330A44 44 0 0 1 1004 398L968 374V330Z" fill="#68E0D0"/>
+  <path d="M1004 398A44 44 0 0 1 938 409L968 374L1004 398Z" fill="#7CB6FF"/>
+  <path d="M938 409A44 44 0 0 1 968 330V374L938 409Z" fill="#FF9C7D"/>
+  <rect x="854" y="474" width="246" height="170" rx="24" fill="#0F202B"/>
+  <text x="886" y="516" fill="#F5FCFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Payslip Queue</text>
+  <rect x="886" y="540" width="182" height="16" rx="8" fill="#183847"/>
+  <rect x="886" y="570" width="150" height="16" rx="8" fill="#183847"/>
+  <rect x="886" y="600" width="164" height="16" rx="8" fill="#183847"/>
+  <rect x="1020" y="538" width="48" height="20" rx="10" fill="#183A2F"/>
+  <text x="1032" y="552" fill="#BFF5D7" font-family="Arial, sans-serif" font-size="12" font-weight="700">OK</text>
+  <rect x="1002" y="568" width="66" height="20" rx="10" fill="#244A5E"/>
+  <text x="1013" y="582" fill="#CDEFFF" font-family="Arial, sans-serif" font-size="12" font-weight="700">SEND</text>
 </svg>

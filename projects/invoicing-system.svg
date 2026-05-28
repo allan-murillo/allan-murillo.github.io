@@ -1,18 +1,60 @@
 <svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="760" rx="36" fill="#08111E"/>
-  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
-  <rect x="114" y="116" width="390" height="520" rx="24" fill="#F6F7FB"/>
-  <rect x="548" y="116" width="538" height="126" rx="24" fill="#13253C"/>
-  <rect x="548" y="274" width="538" height="362" rx="24" fill="#0E1C30"/>
-  <rect x="160" y="188" width="220" height="18" rx="9" fill="#FF8B6B"/>
-  <rect x="160" y="246" width="298" height="12" rx="6" fill="#95A9C9"/>
-  <rect x="160" y="292" width="270" height="12" rx="6" fill="#95A9C9"/>
-  <rect x="160" y="338" width="286" height="12" rx="6" fill="#95A9C9"/>
-  <text x="114" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="40" font-weight="700">Invoicing System</text>
   <defs>
-    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#12253B"/>
-      <stop offset="1" stop-color="#0A1625"/>
+    <linearGradient id="bg" x1="76" y1="44" x2="1122" y2="712" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#122442"/>
+      <stop offset="1" stop-color="#0A1324"/>
     </linearGradient>
+    <filter id="shadow" x="50" y="22" width="1096" height="708" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#020713" flood-opacity="0.44"/>
+    </filter>
   </defs>
+  <rect width="1200" height="760" rx="36" fill="#07101B"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="40" width="1072" height="680" rx="30" fill="url(#bg)"/>
+  </g>
+  <rect x="64" y="40" width="1072" height="58" rx="30" fill="#1D385D"/>
+  <circle cx="112" cy="69" r="8" fill="#FF8D72"/>
+  <circle cx="140" cy="69" r="8" fill="#FFD06A"/>
+  <circle cx="168" cy="69" r="8" fill="#68E0D0"/>
+  <text x="208" y="76" fill="#F5F9FF" font-family="Arial, sans-serif" font-size="25" font-weight="700">Invoicing System</text>
+  <rect x="92" y="126" width="238" height="548" rx="24" fill="#0F1C31"/>
+  <text x="122" y="172" fill="#ECF4FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Invoice Desk</text>
+  <rect x="114" y="206" width="190" height="40" rx="14" fill="#214770"/>
+  <g fill="#8AA5CB" font-family="Arial, sans-serif" font-size="16">
+    <text x="140" y="232" fill="#DFEBFF">Create Invoice</text>
+    <text x="122" y="292">Clients</text>
+    <text x="122" y="334">Products</text>
+    <text x="122" y="376">Payments</text>
+    <text x="122" y="418">Templates</text>
+  </g>
+  <rect x="354" y="126" width="746" height="108" rx="24" fill="#0F2038"/>
+  <text x="386" y="170" fill="#8CA8D1" font-family="Arial, sans-serif" font-size="16">Invoice Status</text>
+  <text x="386" y="210" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">84 open invoices</text>
+  <rect x="828" y="150" width="240" height="52" rx="18" fill="#183A2F"/>
+  <text x="886" y="182" fill="#C6F6D6" font-family="Arial, sans-serif" font-size="16" font-weight="700">PAID THIS WEEK</text>
+  <rect x="354" y="260" width="448" height="384" rx="24" fill="#0E1C31"/>
+  <text x="386" y="302" fill="#F5F9FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Invoice Builder</text>
+  <rect x="386" y="328" width="384" height="1" fill="#203F65"/>
+  <rect x="386" y="356" width="156" height="18" rx="9" fill="#213E64"/>
+  <rect x="560" y="356" width="142" height="18" rx="9" fill="#213E64"/>
+  <rect x="386" y="400" width="352" height="116" rx="18" fill="#152844"/>
+  <g fill="#DCE8FF" font-family="Arial, sans-serif" font-size="15">
+    <text x="416" y="434">Design Consultation</text>
+    <text x="650" y="434">$480</text>
+    <text x="416" y="470">Hosting Renewal</text>
+    <text x="650" y="470">$120</text>
+  </g>
+  <rect x="386" y="546" width="170" height="48" rx="18" fill="#214770"/>
+  <text x="432" y="577" fill="#F6FBFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">Save Draft</text>
+  <rect x="824" y="260" width="276" height="186" rx="24" fill="#0E1C31"/>
+  <text x="856" y="302" fill="#F5F9FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Aging Summary</text>
+  <rect x="856" y="328" width="212" height="14" rx="7" fill="#203F65"/>
+  <rect x="856" y="328" width="164" height="14" rx="7" fill="#7CB6FF"/>
+  <rect x="856" y="358" width="212" height="14" rx="7" fill="#203F65"/>
+  <rect x="856" y="358" width="102" height="14" rx="7" fill="#FF9C7D"/>
+  <rect x="824" y="468" width="276" height="176" rx="24" fill="#0E1C31"/>
+  <text x="856" y="510" fill="#F5F9FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Payment Activity</text>
+  <path d="M856 596C892 572 910 580 942 552C970 528 1004 530 1062 500" stroke="#68E0D0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="942" cy="552" r="8" fill="#7CB6FF"/>
+  <circle cx="1062" cy="500" r="8" fill="#68E0D0"/>
 </svg>

@@ -1,18 +1,71 @@
 <svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="760" rx="36" fill="#09121F"/>
-  <rect x="42" y="42" width="1116" height="676" rx="28" fill="url(#a)"/>
-  <path d="M192 142H430V620L400 602L370 620L340 602L310 620L280 602L250 620L220 602L192 620V142Z" fill="#F4F5F8"/>
-  <rect x="514" y="142" width="548" height="118" rx="22" fill="#13243B"/>
-  <rect x="514" y="292" width="548" height="328" rx="22" fill="#0F1C30"/>
-  <rect x="236" y="206" width="152" height="14" rx="7" fill="#FF8B6B"/>
-  <rect x="236" y="254" width="134" height="10" rx="5" fill="#1A2941" fill-opacity=".58"/>
-  <rect x="236" y="288" width="120" height="10" rx="5" fill="#1A2941" fill-opacity=".58"/>
-  <rect x="236" y="322" width="140" height="10" rx="5" fill="#1A2941" fill-opacity=".58"/>
-  <text x="92" y="88" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="40" font-weight="700">Receipt Recording</text>
   <defs>
-    <linearGradient id="a" x1="600" y1="42" x2="600" y2="718" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#12223A"/>
-      <stop offset="1" stop-color="#0A1627"/>
+    <linearGradient id="bg" x1="74" y1="48" x2="1122" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D2018"/>
+      <stop offset="1" stop-color="#11161E"/>
     </linearGradient>
+    <filter id="shadow" x="50" y="22" width="1096" height="708" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#040403" flood-opacity="0.42"/>
+    </filter>
   </defs>
+  <rect width="1200" height="760" rx="36" fill="#0D1016"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="40" width="1072" height="680" rx="30" fill="url(#bg)"/>
+  </g>
+  <rect x="64" y="40" width="1072" height="58" rx="30" fill="#4B3326"/>
+  <circle cx="112" cy="69" r="8" fill="#FF8D72"/>
+  <circle cx="140" cy="69" r="8" fill="#FFD06A"/>
+  <circle cx="168" cy="69" r="8" fill="#68E0D0"/>
+  <text x="208" y="76" fill="#FFF9F2" font-family="Arial, sans-serif" font-size="25" font-weight="700">Receipt Recording System</text>
+  <rect x="92" y="126" width="248" height="548" rx="24" fill="#1B130E"/>
+  <text x="122" y="172" fill="#FFEFD9" font-family="Arial, sans-serif" font-size="20" font-weight="700">Receipt Vault</text>
+  <rect x="116" y="206" width="200" height="40" rx="14" fill="#664533"/>
+  <g fill="#BCA08A" font-family="Arial, sans-serif" font-size="16">
+    <text x="142" y="232" fill="#FFF3E1">Archive</text>
+    <text x="122" y="292">Categories</text>
+    <text x="122" y="334">OCR Queue</text>
+    <text x="122" y="376">Audit Trail</text>
+    <text x="122" y="418">Exports</text>
+  </g>
+  <rect x="366" y="126" width="734" height="86" rx="24" fill="#1A1513"/>
+  <rect x="398" y="152" width="308" height="34" rx="17" fill="#30231D"/>
+  <text x="426" y="174" fill="#BCA08A" font-family="Arial, sans-serif" font-size="15">Search supplier, amount, date, category...</text>
+  <rect x="972" y="146" width="96" height="46" rx="18" fill="#7C5441"/>
+  <text x="994" y="175" fill="#FFF3E1" font-family="Arial, sans-serif" font-size="14" font-weight="700">UPLOAD</text>
+  <rect x="366" y="236" width="430" height="408" rx="24" fill="#1A1513"/>
+  <text x="398" y="278" fill="#FFF9F2" font-family="Arial, sans-serif" font-size="22" font-weight="700">Indexed Receipts</text>
+  <rect x="398" y="302" width="366" height="1" fill="#45342A"/>
+  <g fill="#BCA08A" font-family="Arial, sans-serif" font-size="15">
+    <text x="398" y="334">Vendor</text>
+    <text x="570" y="334">Amount</text>
+    <text x="656" y="334">Date</text>
+  </g>
+  <g fill="#FFF1DE" font-family="Arial, sans-serif" font-size="16">
+    <text x="398" y="374">Office Depot</text>
+    <text x="570" y="374">$124.80</text>
+    <text x="656" y="374">May 18</text>
+    <text x="398" y="416">Fuel Station</text>
+    <text x="570" y="416">$68.40</text>
+    <text x="656" y="416">May 18</text>
+    <text x="398" y="458">Metro Market</text>
+    <text x="570" y="458">$214.35</text>
+    <text x="656" y="458">May 17</text>
+    <text x="398" y="500">Parcel Express</text>
+    <text x="570" y="500">$34.20</text>
+    <text x="656" y="500">May 16</text>
+  </g>
+  <rect x="826" y="236" width="274" height="250" rx="24" fill="#1A1513"/>
+  <text x="858" y="278" fill="#FFF9F2" font-family="Arial, sans-serif" font-size="20" font-weight="700">Receipt Preview</text>
+  <rect x="882" y="304" width="164" height="150" rx="12" fill="#FFF8F1"/>
+  <rect x="912" y="326" width="104" height="10" rx="5" fill="#D5C5B5"/>
+  <rect x="912" y="350" width="84" height="8" rx="4" fill="#E0D3C5"/>
+  <rect x="912" y="374" width="92" height="8" rx="4" fill="#E0D3C5"/>
+  <rect x="912" y="398" width="76" height="8" rx="4" fill="#E0D3C5"/>
+  <rect x="912" y="422" width="96" height="8" rx="4" fill="#D1C0AE"/>
+  <rect x="826" y="510" width="274" height="134" rx="24" fill="#1A1513"/>
+  <text x="858" y="552" fill="#FFF9F2" font-family="Arial, sans-serif" font-size="20" font-weight="700">Category Split</text>
+  <rect x="858" y="576" width="178" height="14" rx="7" fill="#4D392D"/>
+  <rect x="858" y="576" width="136" height="14" rx="7" fill="#FFB08E"/>
+  <rect x="858" y="606" width="178" height="14" rx="7" fill="#4D392D"/>
+  <rect x="858" y="606" width="88" height="14" rx="7" fill="#7CB6FF"/>
 </svg>
